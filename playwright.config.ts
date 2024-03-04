@@ -1,7 +1,15 @@
 import type { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
-  testMatch: ["tests/login.test.ts"]
+  use: {
+    headless: true,
+    channel: "chrome",
+    screenshot: "only-on-failure",
+    video: "retain-on-failure"
+  },
+  testMatch: ["**.test.ts"],
+  retries: 0,
+  reporter: [["dot"], ["json", { outputFile: "test-result.json"}]]
 };
 
 export default config;
