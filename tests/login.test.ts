@@ -3,7 +3,7 @@ import { chromium, test } from "@playwright/test"
 test("Login test", async () => {
     // Launch chromium browser enigine (google chrome , microsoft edge)
     const browser = await chromium.launch({
-        headless: false
+
     });
     const context = await browser.newContext();
     const page = await context.newPage();
