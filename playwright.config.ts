@@ -9,7 +9,7 @@ const config: PlaywrightTestConfig = {
   },
   testMatch: ["**.test.ts"],
   retries: 0,
-  reporter: [["dot"], ["json", { outputFile: "test-result.json"}]]
+  reporter: [['list', { printSteps: true }],["dot"], ["json", { outputFile: "test-result.json"}]]
 };
 
 export default config;

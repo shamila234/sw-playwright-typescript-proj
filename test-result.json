@@ -16,6 +16,12 @@
     "preserveOutput": "always",
     "reporter": [
       [
+        "list",
+        {
+          "printSteps": true
+        }
+      ],
+      [
         "dot",
         null
       ],
@@ -61,7 +67,7 @@
       "specs": [
         {
           "title": "Login test",
-          "ok": false,
+          "ok": true,
           "tags": [],
           "tests": [
             {
@@ -73,41 +79,17 @@
               "results": [
                 {
                   "workerIndex": 0,
-                  "status": "failed",
-                  "duration": 8150,
-                  "error": {
-                    "message": "Error: page.fill: Target page, context or browser has been closed",
-                    "stack": "Error: page.fill: Target page, context or browser has been closed\n    at /Users/srinika/Projects/shamila/sw-playwright-typescript-proj/tests/login.test.ts:16:16",
-                    "location": {
-                      "file": "/Users/srinika/Projects/shamila/sw-playwright-typescript-proj/tests/login.test.ts",
-                      "column": 16,
-                      "line": 16
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name=dwfrm_login_email]\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"test-email.gmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name=dwfrm_login_password]\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"test-password\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"button:has-text('Sign in')\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
-                    {
-                      "location": {
-                        "file": "/Users/srinika/Projects/shamila/sw-playwright-typescript-proj/tests/login.test.ts",
-                        "column": 16,
-                        "line": 16
-                      },
-                      "message": "Error: page.fill: Target page, context or browser has been closed\n\n\u001b[0m \u001b[90m 14 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"text=Sign in\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 15 |\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 16 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name=dwfrm_login_email]\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"test-email.gmail.com\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m    |\u001b[39m                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 17 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mfill(\u001b[32m\"input[name=dwfrm_login_password]\"\u001b[39m\u001b[33m,\u001b[39m \u001b[32m\"test-password\"\u001b[39m)\u001b[0m\n\u001b[0m \u001b[90m 18 |\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 |\u001b[39m     \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mclick(\u001b[32m\"button:has-text('Sign in')\"\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\n\u001b[2m    at /Users/srinika/Projects/shamila/sw-playwright-typescript-proj/tests/login.test.ts:16:16\u001b[22m"
-                    }
-                  ],
+                  "status": "passed",
+                  "duration": 13012,
+                  "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2024-03-05T00:45:03.079Z",
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "/Users/srinika/Projects/shamila/sw-playwright-typescript-proj/tests/login.test.ts",
-                    "column": 16,
-                    "line": 16
-                  }
+                  "startTime": "2024-03-05T01:10:04.737Z",
+                  "attachments": []
                 }
               ],
-              "status": "unexpected"
+              "status": "expected"
             }
           ],
           "id": "ef85df6096d4739f2c52-41375e114463afa67428",
@@ -120,11 +102,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2024-03-05T00:45:02.675Z",
-    "duration": 8967.254,
-    "expected": 0,
+    "startTime": "2024-03-05T01:10:04.246Z",
+    "duration": 13765.721000000001,
+    "expected": 1,
     "skipped": 0,
-    "unexpected": 1,
+    "unexpected": 0,
     "flaky": 0
   }
 }
